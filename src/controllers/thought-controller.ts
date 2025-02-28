@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { Thought, User } from '../models/index.js';
 
+
 // get all thoughts
 export const getAllThoughts = async (_req: Request, res: Response) => {
     try {
@@ -71,17 +72,22 @@ export const updateThought = async (req: Request, res: Response) => {
 // delete a thought
 export const deleteThought = async (req: Request, res: Response) => {
     try {
-        const thought = await Thought.findByIdAndDelete(req.params.thoughtId);
+        const thought = await Thought.findOneAndDelete({ _id: req.params.thoughtId });
 
         if (!thought) {
             return res.status(404).json({ message: 'No such thought exists' });
         }
 
-        await User.findByIdAndUpdate(
-            thought.username, 
+        // ✅ Remove thought reference from user's `thoughts` array
+        const user = await User.findOneAndUpdate(
+            { thoughts: req.params.thoughtId },  // 🔍 Find user by thought ID
             { $pull: { thoughts: req.params.thoughtId } },
             { new: true }
         );
+
+        if (!user) {
+            return res.json({ message: 'Thought deleted, but no associated user was found' });
+        }
 
         return res.json({ message: 'Thought successfully deleted' });
     } catch (error: any) {
@@ -89,6 +95,8 @@ export const deleteThought = async (req: Request, res: Response) => {
         return res.status(500).json({ message: error.message });
     }
 };
+
+
 
 // add a reaction to a thought
 export const addReaction = async (req: Request, res: Response) => {

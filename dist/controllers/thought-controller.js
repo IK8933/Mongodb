@@ -56,11 +56,12 @@ export const updateThought = async (req, res) => {
 // delete a thought
 export const deleteThought = async (req, res) => {
     try {
-        const thought = await Thought.findByIdAndDelete(req.params.thoughtId);
+        const thought = await Thought.findOneAndDelete({ _id: req.params.thoughtId });
         if (!thought) {
             return res.status(404).json({ message: 'No such thought exists' });
         }
-        await User.findByIdAndUpdate(thought.username, { $pull: { thoughts: req.params.thoughtId } }, { new: true });
+        await User.findOneAndUpdate({ thoughts: req.params.thoughtId }, // ✅ Find by thoughtId
+        { $pull: { thoughts: req.params.thoughtId } }, { new: true });
         return res.json({ message: 'Thought successfully deleted' });
     }
     catch (error) {
