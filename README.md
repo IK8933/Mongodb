@@ -20,7 +20,7 @@ git clone Mondodb, cd mongodb, npm install, mongod, npm start.
 
 
 ## Usage
-Once installed and running, the Social Network API allows you to manage users, thoughts (posts), reactions, and friend connections through API requests. You can use Insomnia or Postman to test the foendints: 
+Once installed and running, the Social Network API allows you to manage users, thoughts (posts), reactions, and friend connections through API requests. You can use Insomnia, Thunder client, or Postman to test: (https://github.com/IK8933/Mongodb/blob/main/Assets/API-file-routes.png)) 
 
 ## License
 License: https://opensource.org/licenses/MIT
@@ -38,8 +38,8 @@ If you’d like to contribute to this project, follow these guidelines to ensure
 - git push origin <your branch>
 
 ## Tests
-- Follow the image for testing routes:
-(https://github.com/IK8933/Mongodb/blob/main/Assets/API-file-routes.png))
+- Follow the video for testing the functionality of the project:
+
 
 
 ## Questions
