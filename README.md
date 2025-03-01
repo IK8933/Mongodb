@@ -32,7 +32,7 @@ Once installed and running, the Social Network API allows you to manage users, t
 
 You can use tools like Insomnia, Thunder Client, or Postman to test the API.
 
-API Routes Example: (https://github.com/IK8933/Mongodb/blob/main/Assets/API-file-routes.png)) 
+API Routes Example: (https://drive.google.com/file/d/1P6I7LMGIIMwtvr7mbrKWyIycG_dtDlaC/view)) 
 
 ## License
 License: https://opensource.org/licenses/MIT
