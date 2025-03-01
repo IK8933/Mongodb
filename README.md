@@ -30,7 +30,7 @@ If you’d like to contribute to this project, follow these guidelines to ensure
 
 ## Tests
 please follow the image for testing routes:
-![Project Screenshot](API file routes.png)
+![Project Screenshot](Assets\API file routes.png)
 
 
 ## Questions
