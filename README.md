@@ -1,10 +1,13 @@
-## Title
 # Social Media
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-Social Network API is a backend application that enables users to interact on a social platform. Built with Node.js, Express, and MongoDB (using Mongoose), it provides RESTful API routes for managing users, thoughts (posts), reactions (comments on thoughts), and friend lists.
-
+The **Social Network API** is a backend application that enables users to interact on a social platform. Built with **Node.js, Express, and MongoDB (Mongoose)**, it provides RESTful API routes for managing:
+- Users
+- Thoughts (posts)
+- Reactions (comments on thoughts)
+- Friend lists
+  
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -16,11 +19,20 @@ Social Network API is a backend application that enables users to interact on a 
 
 
 ## Installation
-git clone Mondodb, cd mongodb, npm install, mongod, npm start.
+To install and set up the project, follow these steps:
+- git clone Mondodb,
+- cd mongodb,
+- npm install,
+- mongod,
+- npm start.
 
 
 ## Usage
-Once installed and running, the Social Network API allows you to manage users, thoughts (posts), reactions, and friend connections through API requests. You can use Insomnia, Thunder client, or Postman to test: (https://github.com/IK8933/Mongodb/blob/main/Assets/API-file-routes.png)) 
+Once installed and running, the Social Network API allows you to manage users, thoughts (posts), reactions, and friend connections through API requests.
+
+You can use tools like Insomnia, Thunder Client, or Postman to test the API.
+
+API Routes Example: (https://github.com/IK8933/Mongodb/blob/main/Assets/API-file-routes.png)) 
 
 ## License
 License: https://opensource.org/licenses/MIT
@@ -38,11 +50,11 @@ If you’d like to contribute to this project, follow these guidelines to ensure
 - git push origin <your branch>
 
 ## Tests
-- Follow the video for testing the functionality of the project:
+- You can follow this video to see how to test the API functionality: https://github.com/IK8933/Mongodb/blob/main/Assets/%5Bcopy%5D%20Social%20media%20MongoDB%20.webm
 
 
 
 ## Questions
-For any questions, please contact me at:
+For any questions, feel free to reach out:
 -GitHub: [IK8933](https://github.com/IK8933)
 -Email: [iankessack1989@gmail.com](mailto:iankessack1989@gmail.com).
