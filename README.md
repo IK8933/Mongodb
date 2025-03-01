@@ -26,11 +26,20 @@ Once installed and running, the Social Network API allows you to manage users, t
 License: https://opensource.org/licenses/MIT
 
 ## Contributing
-If you’d like to contribute to this project, follow these guidelines to ensure a smooth collaboration: fork and clone the Repo, git clone <with your repo uri>, cd <yuor project folder>, create a new   branch ,, npm install, npm start, git add . , git commit -m", git push origin <your branch>
+If you’d like to contribute to this project, follow these guidelines to ensure a smooth collaboration: 
+- fork and clone the Repo,
+- git clone (with your repo uri),
+- cd (your project folder),
+- create a new branch,
+- npm install,
+- npm start,
+- git add .,
+- git commit -m "",
+- git push origin <your branch>
 
 ## Tests
-please follow the image for testing routes:
-![Project Screenshot](Assets\API file routes.png)
+- Follow the image for testing routes:
+(https://github.com/IK8933/Mongodb/blob/main/Assets/API-file-routes.png))
 
 
 ## Questions
